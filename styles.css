@@ -1,0 +1,416 @@
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 15s ease infinite;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+    max-width: 80%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    animation: bounceIn 1s ease-out;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #666;
+    margin: 5px 0 30px;
+    font-weight: 300;
+}
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #ffffff;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background: #f0f0f0;
+    color: #007bff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill.python {
+    background-color: #3776AB;
+    color: white;
+}
+
+.skill.rust {
+    background-color: #000000;
+    color: white;
+}
+
+.skill.php {
+    background-color: #777BB4;
+    color: white;
+}
+
+.skill.c {
+    background-color: #00599C;
+    color: white;
+}
+
+.skill.cpp {
+    background-color: #00599C;
+    color: white;
+}
+
+.skill.javascript {
+    background-color: #F7DF1E;
+    color: black;
+}
+
+.skill.typescript {
+    background-color: #3178C6;
+    color: white;
+}
+
+.skill.java {
+    background-color: #E34A86;
+    color: white;
+}
+
+.skill.sql {
+    background-color: #4479A1;
+    color: white;
+}
+
+.skill.go {
+    background-color: #00ADD8;
+    color: white;
+}
+
+.skill.ruby {
+    background-color: #CC342D;
+    color: white;
+}
+
+.skill.swift {
+    background-color: #F05138;
+    color: white;
+}
+
+.skill.sparql {
+    background-color: #2B4F60;
+    color: white;
+}
+
+.skill.tensorflow {
+    background-color: #FF6F00;
+    color: white;
+}
+
+.skill.scikit-learn {
+    background-color: #F3C02E;
+    color: black;
+}
+
+.skill.pytorch {
+    background-color: #EE4C2C;
+    color: white;
+}
+
+.skill.keras {
+    background-color: #D00000;
+    color: white;
+}
+
+.skill.pandas {
+    background-color: #150458;
+    color: white;
+}
+
+.skill.numpy {
+    background-color: #013243;
+    color: white;
+}
+
+.skill.matplotlib {
+    background-color: #003D6C;
+    color: white;
+}
+
+.skill.seaborn {
+    background-color: #5B4C5A;
+    color: white;
+}
+
+.skill.jupyter {
+    background-color: #F37626;
+    color: white;
+}
+
+.skill.mongodb {
+    background-color: #47A248;
+    color: white;
+}
+
+.skill.express {
+    background-color: #000000;
+    color: white;
+}
+
+.skill.react {
+    background-color: #61DAFB;
+    color: black;
+}
+
+.skill.nodejs {
+    background-color: #339933;
+    color: white;
+}
+
+.skill.docker {
+    background-color: #2496ED;
+    color: white;
+}
+
+.skill.kubernetes {
+    background-color: #326CE5;
+    color: white;
+}
+
+.skill.git {
+    background-color: #F05032;
+    color: white;
+}
+
+.skill.linux {
+    background-color: #FCC624;
+    color: black;
+}
+
+.skill.latex {
+    background-color: #008080;
+    color: white;
+}
+
+.skill.aws {
+    background-color: #232F3E;
+    color: white;
+}
+
+.skill.azure {
+    background-color: #0078D4;
+    color: white;
+}
+
+.skill.gcp {
+    background-color: #4285F4;
+    color: white;
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.125rem;
+    color: #555;
+    margin: 10px 0 20px;
+    font-weight: 300;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.contact-link.linkedin {
+    background-color: #0077b5;
+}
+
+.contact-link.github {
+    background-color: #333;
+}
+
+.contact-link:hover {
+    transform: scale(1.1);
+}
+
+.contact-link.linkedin:hover {
+    background-color: #005582;
+}
+
+.contact-link.github:hover {
+    background-color: #444;
+}
+
+
+/* Previous CSS content */
+
+
+/* Favicon styling is handled by the browser */
+
+.theme-toggle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.theme-toggle .fa-sun {
+    display: none;
+}
+
+.theme-toggle .fa-moon {
+    display: block;
+}
+
+body.dark-mode .theme-toggle .fa-sun {
+    display: block;
+}
+
+body.dark-mode .theme-toggle .fa-moon {
+    display: none;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background: #1e1e1e;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .skill {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .contact-link.linkedin {
+    background-color: #005582;
+}
+
+body.dark-mode .contact-link.github {
+    background-color: #222;
+}
+
+body.dark-mode .theme-toggle {
+    background: linear-gradient(135deg, #444, #666);
+    color: #e0e0e0;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background: linear-gradient(135deg, #666, #888);
+}
